@@ -6,7 +6,7 @@ fetch("https://www.omdbapi.com/?type=movie&s=batman&y=&apikey=c9071015")
     console.log(data);
 
     let movies = data.Search;
-    let output = "";
+    let output;
     for (let movie of movies) {
       output += `
         <div>
@@ -29,7 +29,7 @@ fetch("https://www.omdbapi.com/?type=movie&s=batman&y=&apikey=c9071015")
     alert("Data Not Fetch Properly");
   });
 function myFunction() {
-  alert("Searching");
+  alert("Searching !!!");
   const sResult = document.getElementById("searchm").value;
   const sYear = document.getElementById("searchy").value;
   console.log(sResult);
